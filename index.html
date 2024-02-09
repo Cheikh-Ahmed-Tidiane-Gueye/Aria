@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+
+<body>
+    <div class="bg-white"
+        <header class="py-6 sm:py-12 xl:py-24">
+            <div class="mx-auto max-w-5xl px-8 sm:px-12 lg:px-8 xl:px-16">
+                <div class="flex flex-wrap justify-between lg:items-center">
+                    <div class="relative z-30 flex w-full items-center justify-between overflow-hidden lg:w-auto">
+                        <a href="/">
+                        <img class="h-12 w-auto" src="./images/favicon.svg" alt="Aria logo" width="120" height="120">
+                        </a>
+                        <button type="button" aria-label="hamburger" id="hamburger" class="-mr-6 p-6 lg:hidden">
+                            <div aria-hidden="true" class="m-auto h-0.5 w-6 rounded bg-primary transition duration-300">
+                            </div>
+                            <div aria-hidden="true"
+                                class="m-auto mt-2 h-0.5 w-6 rounded bg-primary transition duration-300"></div>
+                        </button>
+                    </div>
+                    <div id="navas" class="fixed inset-0 z-20 bg-white/90 backdrop-blur-3xl flex items-center justify-center hidden bg-white/90 backdrop-blur-3xl lg:static lg:block lg:h-auto lg:w-auto lg:bg-transparent
+                        lg:backdrop-blur-none">
+                        <ul
+                            class="group flex flex-col items-center gap-6 text-lg lg:flex-row lg:gap-0 lg:text-sm">
+                            <li class="text-right transition duration-500 group-hover:text-stone-300 lg:text-left">
+                                <a href="/pages/about.html" class="block px-6 py-1 hover:text-primary">
+                                About me
+                                </a>
+                            </li>
+                            <li class="text-right transition duration-500 group-hover:text-stone-300 lg:text-left">
+                                <a href="/" class="block px-6 py-1 hover:text-primary">
+                                Instagram
+                                </a>
+                            </li>
+                            <li class="text-right transition duration-500 group-hover:text-stone-300 lg:text-left">
+                                <a href="/pages/services.html" class="block px-6 py-1 hover:text-primary">
+                                Behance
+                                </a>
+                            </li>
+                            <li class="text-right group-hover:text-stone-300 lg:pl-6 lg:text-left">
+                                <a href="mailto:hello@tailus.io"
+                                    class="flex h-9 items-center overflow-hidden border border-stone-300 px-3.5 py-1 text-sm transition-all duration-300 hover:border-primary hover:bg-primary hover:text-stone-900">
+                                    <span class="relative flex items-center">
+                                        hey@aria.me
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            strokeWidth="1.5" stroke="currentColor"
+                                            class="h-4 w-4 translate-x-1 duration-300 group-hover:translate-x-2.5">
+                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                                d="M8.25 4.5l7.5 7.5-7.5 7.5"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="pt-12 sm:pt-20 md:pt-20">
+                <div class="mx-auto max-w-5xl px-8 sm:px-12 lg:px-8 xl:px-16">
+                    <div class="lg:w-4/5">
+                        <h1 class="text-3xl font-semibold text-black sm:text-5xl">
+                            Exquisite suit for a
+                            <span class="font-bold text-primary">
+                                money transfer
+                            </span>
+                            service
+                        </h1>
+                        <p class="ml-auto mt-12 text- sm:w-3/5 lg:w-1/2">
+                            Esse eaque error dolor tempora! Magni eveniet aliquid
+                            laboriosam et error nemo, qui, nostrum similique autem
+                            exercitationem fugiat ipsum ipsam pariatur veniam.
+                        </p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="mt-24 space-y-24 lg:mt-32 lg:space-y-32">
+                <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8">
+                    <div class="group grid gap-2 sm:grid-cols-3 sm:gap-4">
+                        <img class="h-full w-full object-cover sm:col-span-2" src="./images/work1.webp" alt="project cover"
+                            width="1500" height="1000">
+                        <img class="h-full w-full object-cover object-left" src="./images/work2.webp" alt="project cover" width="1920"
+                            height="2688">
+                    </div>
+                </div>
+                <div class="mx-auto max-w-5xl px-8 sm:px-12 lg:px-8 xl:px-16">
+                    <div class="gap-4 sm:flex sm:gap-8 lg:w-4/5 lg:gap-12">
+                        <h2 class="text-2xl font-semibold text-black sm:w-2/5
+                            sm:text-4xl">
+                            User trust is top priority
+                        </h2>
+                        <p class="mt-6 text-black sm:mt-0 sm:w-3/5">
+                            First you judge “how nice,” then you judge “how wise”.
+                            Especially when it comes to new users who know nothing about
+                            the service. They depend on visual attributes that reflect
+                            brand’s values, approach, and consistency. It’s the brand’s
+                            apparel.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8">
+                    <div class="grid grid-cols-2 gap-2 sm:gap-4">
+                        <img class="h-full w-full object-cover" src="images/work11.webp" alt="project cover" width="1000"
+                            height="1500">
+                        <img class="h-full w-full object-cover" src="images/work10.webp" alt="project cover" width="1000"
+                            height="1500">
+                    </div>
+                </div>
+                <div class="mx-auto max-w-5xl px-8 sm:px-12 lg:px-8 xl:px-16">
+                    <div class="gap-4 sm:flex sm:gap-8 lg:w-4/5 lg:gap-12">
+                        <h2 class="text-2xl font-semibold text-stone-900 sm:w-2/5 sm:text-4xl">
+                            Ramotion is a digital stylist
+                        </h2>
+                        <p class="mt-6 text-stone-700 sm:mt-0 sm:w-3/5">
+                            To sew a perfect “branding suit,” we need to measure the
+                            client first, to know more about his tastes and lifestyle.
+                            During the working process, we perform regular fitting with
+                            the client because he is the only person who can feel whether
+                            a new suit fits or not.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8">
+                    <div class="space-y-2 sm:space-y-4">
+                        <img class="h-full w-full object-cover" src="images/work5.webp" alt="project cover" width="1500"
+                            height="1000">
+                        <img class="h-full w-full object-cover" src="images/work7.webp" alt="project cover" width="1500"
+                            height="1001">
+                        <img class="h-full w-full object-cover" src="images/work9.webp" alt="project cover" width="1920"
+                            height="2880">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="py-32">
+                <div class="mx-auto max-w-7xl px-4 sm:px-12 lg:px-8 xl:px-16">
+                    <a href="mailto:hello@tailus.io" class="relative mt-4 block text-center text-5xl font-thin
+                        sm:text-7xl text-black">
+                        <span class="text-stone-700 transition duration-700 hover:bg-gradient-to-r hover:from-accent
+                            hover:to-primary hover:bg-clip-text">
+                            hey@aria.me
+                        </span>
+                    </a>
+                    <div class="mx-auto mt-12 sm:w-4/5 md:w-2/5">
+                        <p class="text-center text-lg font-normal text-stone-600">
+                            I'd love to hear more about your project, or you can just
+                            write me "Hello!".
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="pt-6 dark:bg-stone-900">
+            <div class="mx-auto max-w-7xl divide-y divide-white px-4 dark:divide-stone-700 sm:px-12 lg:px-8 xl:px-16">
+                <div class="flex flex-col items-center justify-between gap-6 pb-6 sm:flex-row">
+                    <a href="/" class="block w-max">
+                    <img class="h-9 w-auto" src="images/favicon.svg" alt="Aria logo" width="120" height="120">
+                    </a>
+                    <ul
+                        class="group items-center justify-center gap-0 text-center text-sm text-stone-200 sm:flex lg:gap-0">
+                        <li class="transition duration-500 group-hover:text-stone-300">
+                            <a href="/pages/about.html" class="block px-3 py-1">
+                            About me
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="flex flex-col flex-wrap items-center justify-between gap-4 py-6 text-sm text-stone-200 sm:flex-row sm:gap-6">
+                    <span class="order-last sm:order-first">
+                        Copyright © Aria 2019 - Present
+                    </span>
+                    <ul class="order-first flex gap-6 sm:order-2">
+                        <li>
+                            <a href="#" target="_blank" class="transition duration-300 hover:text-stone-400">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="transition duration-300 hover:text-stone-400">
+                                Behance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" class="transition duration-300 hover:text-stone-400">
+                                Instagram
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="/pages/privacy.html"
+                        class="order-2 transition duration-300 hover:text-stone-400 sm:order-last">
+                    Privacy Policy
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
